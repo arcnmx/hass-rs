@@ -9,7 +9,7 @@ use serde::{Deserialize, Serialize};
 /// The mqtt switch platform lets you control your MQTT enabled switches.
 ///
 /// See: <https://www.home-assistant.io/integrations/switch.mqtt/>
-#[derive(Debug, Clone, PartialEq, Eq, Serialize, Deserialize)]
+#[derive(Debug, Default, Clone, PartialEq, Eq, Serialize, Deserialize)]
 pub struct Switch<'a> {
   #[serde(borrow, flatten)]
   pub entity: Entity<'a>,

@@ -13,7 +13,7 @@ use std::{borrow::Cow, num::NonZeroU32};
 /// state will be undefined.
 ///
 /// See: <https://www.home-assistant.io/integrations/sensor.mqtt/>
-#[derive(Debug, Clone, PartialEq, Eq, Serialize, Deserialize)]
+#[derive(Debug, Default, Clone, PartialEq, Eq, Serialize, Deserialize)]
 pub struct Sensor<'a> {
   #[serde(borrow, flatten)]
   pub entity: Entity<'a>,

@@ -39,7 +39,7 @@ impl Default for AvailabilityMode {
   }
 }
 
-#[derive(Debug, Clone, PartialEq, Eq, Serialize, Deserialize)]
+#[derive(Debug, Default, Clone, PartialEq, Eq, Serialize, Deserialize)]
 pub struct Availability<'a> {
   /// An MQTT topic subscribed to receive availability (online/offline) updates.
   #[serde(borrow)]

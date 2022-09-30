@@ -21,6 +21,13 @@ macro_rules! typed_str {
       }
     }
 
+    impl<'a> Default for $name<'a> {
+      #[inline]
+      fn default() -> Self {
+        <&str>::default().into()
+      }
+    }
+
     impl<'a> std::fmt::Debug for $name<'a> {
       #[inline]
       fn fmt(&self, f: &mut std::fmt::Formatter<'_>) -> std::fmt::Result {
