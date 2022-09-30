@@ -11,7 +11,7 @@ use std::{borrow::Cow, num::NonZeroU32};
 /// state will be undefined.
 ///
 /// See: <https://www.home-assistant.io/integrations/sensor.mqtt/>
-#[derive(Debug, Clone, PartialEq, Eq, Serialize, Deserialize)]
+#[derive(Debug, Default, Clone, PartialEq, Eq, Serialize, Deserialize)]
 pub struct Sensor<'a> {
   /// The [type/class][device_class] of the sensor to set
   /// the icon in the frontend.
