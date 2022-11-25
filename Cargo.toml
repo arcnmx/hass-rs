@@ -1,0 +1,6 @@
+[package]
+name = "test"
+version = "0.0.0"
+
+[dependencies]
+hass-mqtt-discovery = { version = "0.1", git = "https://github.com/YoloDev/hass-rs", branch = "poc/builder" }
