@@ -7,7 +7,7 @@ use futures::stream::Stream;
 
 #[cfg(feature = "paho")]
 #[cfg_attr(doc_cfg, doc(cfg(feature = "paho")))]
-mod paho;
+pub mod paho;
 
 #[cfg(feature = "paho")]
 #[cfg_attr(doc_cfg, doc(cfg(feature = "paho")))]
